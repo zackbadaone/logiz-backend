@@ -1,0 +1,42 @@
+# Logs & System Noise
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment & Sensitive Credentials (منع تسريب مفاتيح وقواعد بيانات السيرفر)
+.env
+.env.backup
+.env.production
+storage/*.key
+/auth.json
+
+# Composer & Node Dependencies (تجاهل المكتبات الثقيلة)
+/vendor/
+/node_modules/
+
+# Cache, Build & Testing Frameworks
+.phpactor.json
+.phpunit.result.cache
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/public/build
+/public/fonts-manifest.dev.json
+/public/hot
+/public/storage
+/storage/pail
+
+# IDE & Helpers
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+
+# -------------------------------------------------------
+# حماية إضافية للبيئة السحابية (منع رفع قواعد البيانات المحلية)
+# -------------------------------------------------------
+/database/*.sqlite
+/database/*.sqlite3
